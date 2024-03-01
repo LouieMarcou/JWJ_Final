@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: ca9284ce2105845d48d63f8068aa8e51
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - IOSGameObject: {instanceID: 0}
+  - ObjectManagerMain: {instanceID: 0}
+  - ObjectManagerDance: {instanceID: 0}
+  - ObjectManagerPrayer: {instanceID: 0}
+  - audioMain: {instanceID: 0}
+  - audioPray: {instanceID: 0}
+  - audioDance: {instanceID: 0}
+  - maroonPanel: {instanceID: 0}
+  - tealPanel: {instanceID: 0}
+  - iOSMusicAudioSource: {instanceID: 0}
+  - AnimatorDance: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
