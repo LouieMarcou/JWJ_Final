@@ -1,0 +1,56 @@
+{
+    "totalVariantsIn": 6,
+    "totalVariantsOut": 6,
+    "shaders": [
+        {
+            "inputVariants": 6,
+            "outputVariants": 6,
+            "name": "RenderTextureOutput",
+            "pipelines": [
+                {
+                    "inputVariants": 6,
+                    "outputVariants": 6,
+                    "pipeline": "",
+                    "variants": [
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: ConvertYUV420",
+                            "stripTimeMs": 0.0057
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: ConvertBGRA8888",
+                            "stripTimeMs": 0.0004
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: ConvertRGBA8888",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Rotate90",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Rotate180",
+                            "stripTimeMs": 0.0001
+                        },
+                        {
+                            "inputVariants": 1,
+                            "outputVariants": 1,
+                            "variantName": "Kernel: Rotate270",
+                            "stripTimeMs": 0.0
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
