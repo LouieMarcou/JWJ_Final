@@ -62,6 +62,10 @@ public class JesusSpawner : MonoBehaviour
     [SerializeField] private AudioManager audioManager;
 
 
+    public delegate void OnObjectPlaced();
+    public static OnObjectPlaced onObjectPlaced;
+
+
     private void Awake()
     {
         EnsureFacingCamera() ;
@@ -78,17 +82,6 @@ public class JesusSpawner : MonoBehaviour
     public bool TrySpawnObject(Vector3 spawnPoint, Vector3 spawnNormal)
     {
         if(hasSpawned) return false;
-        //if(m_OnlySpawnInView)
-        //{
-        //    var viewMin = m_ViewportPeriphery;
-        //    var viewMax = 1f - m_ViewportPeriphery;
-        //    var pointInViewportSpace = cameraToFace.WorldToScreenPoint(spawnPoint);
-        //    if(pointInViewportSpace.z < 0f || pointInViewportSpace.x > viewMax || pointInViewportSpace.x < viewMin ||
-        //        pointInViewportSpace.y > viewMax || pointInViewportSpace.y < viewMin)
-        //    {
-        //        return false;
-        //    }
-        //}
 
         var newObject = Instantiate(m_JesusObject);
         newObject.transform.parent = transform;
@@ -103,12 +96,17 @@ public class JesusSpawner : MonoBehaviour
         newObject.transform.rotation = Quaternion.LookRotation(projectedForward, spawnNormal);
 
         newObject.transform.eulerAngles -= new Vector3(0f, 130f, 0f);
+        newObject.transform.localScale = new Vector3(0.7f, 0.7f, 0.7f);
         audioManager.SetJesus(newObject);
 
         objectSpawned?.Invoke(newObject);
         hasSpawned = true;
         explantionText.SetActive(false);
         mainPanel.SetActive(true);
+        if(onObjectPlaced != null)
+        {
+            onObjectPlaced();
+        }
         return true;
     }
     public void ClearObejcts()
