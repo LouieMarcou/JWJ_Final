@@ -21,6 +21,7 @@ public class PlaceObject : MonoBehaviour
     private bool m_IsDragging = false;
 
     private GameObject[] planes;
+
     private void OnEnable()
     {
         EnhancedTouched.EnhancedTouchSupport.Enable();
