@@ -85,6 +85,7 @@
     <Compile Include="Assets\Scripts\UIRemainSelected.cs" />
     <Compile Include="Assets\Settings\Project Configuration\SceneTemplate_RotateCube.cs" />
     <Compile Include="Assets\Scripts\Audio Managers\AudioManager.cs" />
+    <Compile Include="Assets\Scripts\OnBoard.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

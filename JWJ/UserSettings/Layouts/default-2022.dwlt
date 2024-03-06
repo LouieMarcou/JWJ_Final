@@ -68,8 +68,8 @@ MonoBehaviour:
     y: 0
     width: 583
     height: 947
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -111,7 +111,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: AnimationWindow
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -120,15 +120,15 @@ MonoBehaviour:
     y: 560
     width: 1337
     height: 387
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 12}
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
   - {fileID: 20}
   - {fileID: 12}
-  m_Selected: 2
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -269,8 +269,8 @@ MonoBehaviour:
     y: 0
     width: 818
     height: 560
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -278,7 +278,7 @@ MonoBehaviour:
   - {fileID: 15}
   - {fileID: 13}
   m_Selected: 0
-  m_LastSelected: 3
+  m_LastSelected: 1
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -316,7 +316,7 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 31210
+  m_LastSelectedObjectID: 43598
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -574,7 +574,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/FocusSquareAnimationStuff
+    - Assets/Nikki/Febuary_Updated/OnBoarding
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -582,16 +582,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/FocusSquareAnimationStuff
+  - Assets/Nikki/Febuary_Updated/OnBoarding
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Louie Marcou\OneDrive\Documents\GitHub\JWJ_Final\JWJ
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 120}
-    m_SelectedIDs: 40870000
-    m_LastClickedID: 34624
-    m_ExpandedIDs: 00000000f2860000f4860000f6860000f8860000fa860000fc860000fe86000000870000028700000487000006870000088700000a8700000c8700000e87000010870000128700001487000016870000188700001a8700001c8700001e87000020870000
+    scrollPos: {x: 0, y: 138}
+    m_SelectedIDs: faac0000
+    m_LastClickedID: 44282
+    m_ExpandedIDs: 00000000f0860000f2860000f4860000f6860000f8860000fa860000fc860000fe86000000870000028700000487000006870000088700000a8700000c8700000e87000010870000128700001487000016870000188700001a8700001c8700001e870000a887000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -619,7 +619,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000f2860000f4860000f6860000f8860000fa860000fc860000fe86000000870000028700000487000006870000088700000a8700000c8700000e87000010870000128700001487000016870000188700001a8700001c8700001e87000020870000
+    m_ExpandedIDs: 00000000f0860000f2860000f4860000f6860000f8860000fa860000fc860000fe86000000870000028700000487000006870000088700000a8700000c8700000e87000010870000128700001487000016870000188700001a8700001c8700001e870000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -647,7 +647,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000966e0000926e00001e880000c87c0000f27b0000f47b0000ca7c0000d67c0000d07c0000b27c00006c8c0000188c0000ea7c0000e27c0000987d0000787d0000a28a0000
+    m_ExpandedInstanceIDs: c6230000966e0000926e00001e880000c87c0000f27b0000f47b0000ca7c0000d67c0000d07c0000b27c00006c8c0000188c0000ea7c0000e27c0000987d0000787d0000a28a00000a930000c487000082920000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -761,20 +761,20 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: ea790000
-      m_LastClickedID: 31210
-      m_ExpandedIDs: 1cfbffff247c0000
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 6ea5feff28a6feff92adfeffb4adfeffb0bdfeff6abefeffd4c5fefff8c5feffa8ddfeff60defeffcae5feffeee5feff2ef8feffe8f8feff2200ffff4400fffff818ffff7a2bffff8432ffff9832ffffce32ffff2836ffff4e43ffff0044ffff344bffff5a4bffffb659ffff685affffd061fffffa61ffff4476ffffc479fffffa88ffffac89ffffee90ffff4edfffff00e0ffff72e7ffff60f1ffff80f4ffff10fbfffff2870000308b00000cab00005ac00000f6c0000008c100003cc1000018cf000028cf00005ccf0000c8d50000d8d500000cd600006ed60000fad600000ad700003ed70000ced70000ded7000012d800003ed900004ed9000082d90000e4df000006e000000ae000002ae0000034e5000056e500005ae500007ae500008eea0000b0ea0000b4ea0000d4ea0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: FocusFindSquare
-        m_OriginalName: FocusFindSquare
+        m_Name: Image
+        m_OriginalName: Image
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 31648
+        m_UserData: 57326
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
         m_OriginalEventType: 0
@@ -1196,9 +1196,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 320, y: 109.37198, z: 0}
+    m_Target: {x: 1671.6304, y: 1542.9565, z: 0}
     speed: 2
-    m_Value: {x: 320, y: 109.37199, z: -0.00000013194222}
+    m_Value: {x: 1671.6304, y: 1542.9565, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1248,9 +1248,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0.2507123, y: -0.024682337, z: 0.006394811, w: 0.9677258}
   m_Size:
-    m_Target: 505.98773
+    m_Target: 1646.1168
     speed: 2
-    m_Value: 484.1988
+    m_Value: 1646.1168
   m_Ortho:
     m_Target: 0
     speed: 2
