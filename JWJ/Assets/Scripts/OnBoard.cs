@@ -4,12 +4,25 @@ using UnityEngine.SceneManagement;
 
 public class OnBoard : MonoBehaviour
 {
-
+    [SerializeField] private Animator animator;
     private bool sceneChangeInput = false;
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(LoadYourAsyncScene());
+        animator.Play("Base Layer.JesusBackgroundFadeAway");
+        //StartCoroutine(LoadYourAsyncScene());
+    }
+
+    public void GoToNextScene()
+    {
+        StartCoroutine(StartFadeAway());
+    }
+
+    IEnumerator StartFadeAway()
+    {
+        animator.Play("Base Layer.JesusBackgroundFadeIn");
+        yield return new WaitForSeconds(2f);
+        SceneManager.LoadScene("JWJ");
     }
 
     IEnumerator LoadYourAsyncScene()
