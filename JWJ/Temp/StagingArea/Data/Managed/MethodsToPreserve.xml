@@ -1,0 +1,113 @@
+<linker>
+	<assembly fullname="Assembly-CSharp" ignoreIfMissing="1">
+		<type fullname="AudioManager">
+			<method name="DanceOne"/>
+			<method name="DanceTwo"/>
+			<method name="Prayer"/>
+			<method name="Prayer"/>
+			<method name="Prayer"/>
+			<method name="Prayer"/>
+		</type>
+		<type fullname="ChangeSliderDotColor">
+			<method name="ChangeToDefault"/>
+			<method name="ChangeToDefault"/>
+			<method name="ChangeToDefault"/>
+			<method name="ChangeToSelected"/>
+			<method name="ChangeToSelected"/>
+			<method name="ChangeToSelected"/>
+		</type>
+		<type fullname="FlashlightController">
+			<method name="TurnOnOffFlashLight"/>
+		</type>
+		<type fullname="LaunchPage">
+			<method name="GetPermissions"/>
+		</type>
+		<type fullname="MuteAudio">
+			<method name="SoundControl"/>
+		</type>
+		<type fullname="OnBoard">
+			<method name="GoToNextScene"/>
+		</type>
+		<type fullname="PlaceObject">
+			<method name="SetIsMoveable"/>
+		</type>
+		<type fullname="Reload">
+			<method name="ReloadScene"/>
+		</type>
+		<type fullname="UIButtonSelectionManager">
+			<method name="UpdateButtonSelected"/>
+			<method name="UpdateButtonSelected"/>
+			<method name="UpdateButtonSelected"/>
+			<method name="UpdateButtonSelected"/>
+			<method name="UpdateButtonSelected"/>
+			<method name="UpdateButtonSelected"/>
+			<method name="UpdateButtonSelected"/>
+		</type>
+		<type fullname="UIRemainSelected">
+			<method name="UpdateSelection"/>
+			<method name="UpdateSelection"/>
+			<method name="UpdateSelection"/>
+			<method name="UpdateSelection"/>
+			<method name="UpdateSelection"/>
+			<method name="UpdateSelection"/>
+			<method name="UpdateSelection"/>
+			<method name="UpdateSelection"/>
+		</type>
+		<type fullname="VideoKit.Tests.VideoKitActionsManager">
+			<method name="GetImage"/>
+			<method name="GetImage"/>
+		</type>
+	</assembly>
+	<assembly fullname="Unity.RenderPipelines.Core.Runtime" ignoreIfMissing="1">
+		<type fullname="UnityEngine.Rendering.UI.DebugUIHandlerIntField">
+			<method name="OnDecrement"/>
+			<method name="OnDecrement"/>
+			<method name="OnIncrement"/>
+			<method name="OnIncrement"/>
+		</type>
+		<type fullname="UnityEngine.Rendering.UI.DebugUIHandlerObjectPopupField">
+			<method name="OnDecrement"/>
+			<method name="OnIncrement"/>
+		</type>
+		<type fullname="UnityEngine.Rendering.UI.DebugUIHandlerPanel">
+			<method name="OnScrollbarClicked"/>
+			<method name="OnScrollbarClicked"/>
+			<method name="ResetDebugManager"/>
+		</type>
+		<type fullname="UnityEngine.Rendering.UI.DebugUIHandlerUIntField">
+			<method name="OnDecrement"/>
+			<method name="OnDecrement"/>
+			<method name="OnIncrement"/>
+			<method name="OnIncrement"/>
+		</type>
+	</assembly>
+	<assembly fullname="Unity.XR.ARFoundation" ignoreIfMissing="1">
+		<type fullname="UnityEngine.XR.ARFoundation.ToolButton">
+			<method name="HighlightButton"/>
+			<method name="HighlightButton"/>
+			<method name="HighlightButton"/>
+			<method name="HighlightButton"/>
+		</type>
+	</assembly>
+	<assembly fullname="UnityEngine.CoreModule" ignoreIfMissing="1">
+		<type fullname="UnityEngine.GameObject">
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+		</type>
+	</assembly>
+</linker>
