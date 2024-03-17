@@ -68,6 +68,51 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jesus@danceOne
       objectReference: {fileID: 0}
+    - target: {fileID: -901661620567478553, guid: 2f93d4da25a6e4d0b836dd7ec6928397,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0156187285
+      objectReference: {fileID: 0}
+    - target: {fileID: -901661620567478553, guid: 2f93d4da25a6e4d0b836dd7ec6928397,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.00015306473
+      objectReference: {fileID: 0}
+    - target: {fileID: -901661620567478553, guid: 2f93d4da25a6e4d0b836dd7ec6928397,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.048274353
+      objectReference: {fileID: 0}
+    - target: {fileID: -901661620567478553, guid: 2f93d4da25a6e4d0b836dd7ec6928397,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7009462
+      objectReference: {fileID: 0}
+    - target: {fileID: -901661620567478553, guid: 2f93d4da25a6e4d0b836dd7ec6928397,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7009462
+      objectReference: {fileID: 0}
+    - target: {fileID: -901661620567478553, guid: 2f93d4da25a6e4d0b836dd7ec6928397,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.093137
+      objectReference: {fileID: 0}
+    - target: {fileID: -901661620567478553, guid: 2f93d4da25a6e4d0b836dd7ec6928397,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.09313697
+      objectReference: {fileID: 0}
+    - target: {fileID: -901661620567478553, guid: 2f93d4da25a6e4d0b836dd7ec6928397,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -901661620567478553, guid: 2f93d4da25a6e4d0b836dd7ec6928397,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 15.137
+      objectReference: {fileID: 0}
     - target: {fileID: 2882030167065245529, guid: 2f93d4da25a6e4d0b836dd7ec6928397,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
