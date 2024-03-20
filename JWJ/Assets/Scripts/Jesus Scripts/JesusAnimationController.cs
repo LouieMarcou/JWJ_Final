@@ -27,8 +27,18 @@ public class JesusAnimationController : MonoBehaviour
             return;
         }
 
+        else if(newState == JESUS_DANCE_TWO)
+        {
+            StartCoroutine(DelayABit());
+        }
+
         animator.Play(newState);
 
         currentState = newState;
+    }
+
+    IEnumerator DelayABit()
+    {
+        yield return new WaitForSeconds(1.0f);
     }
 }
