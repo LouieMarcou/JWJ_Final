@@ -4899,7 +4899,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 840188524}
   danceOneClip: {fileID: 8300000, guid: 080b0b3c5d29040f78c33429366baf82, type: 3}
-  danceTwoClip: {fileID: 8300000, guid: 593839b0af6fe4c0cba3c951e64d0c94, type: 3}
+  danceTwoClip: {fileID: 8300000, guid: daf6e14955a128143bd2a3be20fb46fd, type: 3}
   iOSSongClip: {fileID: 0}
   prayerAudioClipList:
   - {fileID: 8300000, guid: ca6479810a2a6455e94198498fc69c23, type: 3}

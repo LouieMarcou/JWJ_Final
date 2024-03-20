@@ -18,7 +18,7 @@ public class PlaceObject : MonoBehaviour
     [SerializeField] private JesusSpawner m_JesusSpawner;
     private GameObject m_jesusGameObject;
     private bool m_IsMovable;
-    private bool m_IsDragging = false;
+    //private bool m_IsDragging = false;
 
     private GameObject[] planes;
 
