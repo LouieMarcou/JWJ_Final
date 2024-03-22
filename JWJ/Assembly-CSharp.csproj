@@ -85,6 +85,7 @@
     <Compile Include="Assets\PageSlider\Scripts\ChangeSliderDotColor.cs" />
     <Compile Include="Assets\Scripts\Audio Managers\AudioManagerMenu.cs" />
     <Compile Include="Assets\FlashLight\Scripts\Blink.cs" />
+    <Compile Include="Assets\Scripts\MusicKitManager.cs" />
     <Compile Include="Assets\FlashLight\Scripts\FlashlightController.cs" />
     <Compile Include="Assets\Scripts\Jesus Scripts\JesusSpawner.cs" />
     <Compile Include="Assets\PageSlider\Scripts\SliderDot.cs" />
