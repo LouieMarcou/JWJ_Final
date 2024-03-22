@@ -22,7 +22,6 @@ public class AudioManager : MonoBehaviour
         jesusAnim.ChangeAnimationState("danceOne");
     }
 
-
     public void DanceTwo() 
     { 
         CheckClip(danceTwoClip);
@@ -30,7 +29,7 @@ public class AudioManager : MonoBehaviour
     }
     public void IOSDance()
     {
-        //Needs to get song from apple store or whereever it is store.
+        //Needs to get song from apple store or wherever it is store.
         CheckClip(iOSSongClip);
         jesusAnim.ChangeAnimationState("danceThree");
     }

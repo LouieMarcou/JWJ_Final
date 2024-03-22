@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem.LowLevel;
 
 public class JesusAnimationController : MonoBehaviour
 {
@@ -22,13 +23,39 @@ public class JesusAnimationController : MonoBehaviour
 
     public void ChangeAnimationState(string newState)
     {
-        if(newState == currentState)
+        if(newState == currentState && newState != JESUS_PRAY)
         {
             return;
         }
 
-        animator.Play(newState);
+        else if(newState == JESUS_DANCE_TWO)
+        {
+            animator.Play(JESUS_IDLE);
+            currentState = newState;
+            StartCoroutine(DelayABit(8.6f));
+        }
+        else if(newState == JESUS_PRAY)
+        {
+            StopCoroutine(DelayABit(0f));
+            animator.Rebind();
+            animator.Update(1f);
+            currentState = newState;
+            animator.Play(newState);
 
-        currentState = newState;
+        }
+        else
+        {
+            StopCoroutine(DelayABit(0f));
+            animator.Play(JESUS_IDLE);
+            animator.Play(newState);
+            currentState = newState;
+        }
+    }
+
+    //Waits until specficed time to start the animation
+    IEnumerator DelayABit(float time)
+    {
+        yield return new WaitForSeconds(time);
+        animator.Play(currentState);
     }
 }

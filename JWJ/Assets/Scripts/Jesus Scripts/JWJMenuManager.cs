@@ -111,12 +111,6 @@ public class JWJMenuManager : MonoBehaviour
         ChangePlaneVisibility(true);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void ClearObject()
     {
         foreach(Transform child in m_JesusSpawner.transform)

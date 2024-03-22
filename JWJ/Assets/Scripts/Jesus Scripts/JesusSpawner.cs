@@ -96,7 +96,7 @@ public class JesusSpawner : MonoBehaviour
         newObject.transform.rotation = Quaternion.LookRotation(projectedForward, spawnNormal);
 
         newObject.transform.eulerAngles -= new Vector3(0f, 130f, 0f);
-        newObject.transform.localScale = new Vector3(0.7f, 0.7f, 0.7f);
+        newObject.transform.localScale = new Vector3(0.525f, 0.525f, 0.525f);
         audioManager.SetJesus(newObject);
 
         objectSpawned?.Invoke(newObject);
