@@ -48,7 +48,7 @@ public class LaunchPage : MonoBehaviour
 #if UNITY_ANDROID
     void Start()
     {
-        PlayerPrefs.SetInt(IsSceneOpened, 0);//remove this later
+        //PlayerPrefs.SetInt(IsSceneOpened, 0);//remove this later
         if (Permission.HasUserAuthorizedPermission(Permission.Camera))
         {
             GoToNextScene();

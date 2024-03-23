@@ -83,7 +83,7 @@ public class musicManager {
 
 	public static void queryAppleMusic(string productID)
 	{
-		if( Application.platform == RuntimePlatform.IPhonePlayer )
+		if( Application.platform == RuntimePlatform.IPhonePlayer || Application.platform == RuntimePlatform.Android)
 			_queryAppleMusic(productID);
 	}
 
