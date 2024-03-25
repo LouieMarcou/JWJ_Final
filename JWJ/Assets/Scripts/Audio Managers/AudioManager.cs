@@ -31,6 +31,7 @@ public class AudioManager : MonoBehaviour
     {
         //Needs to get song from apple store or wherever it is store.
         CheckClip(iOSSongClip);
+        //AppleMusicController
         jesusAnim.ChangeAnimationState("danceThree");
     }
 

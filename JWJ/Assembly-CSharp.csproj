@@ -72,7 +72,6 @@
     <Compile Include="Assets\Scripts\UIButtonSelectionManager.cs" />
     <Compile Include="Assets\MobileARTemplateAssets\Scripts\ARTemplateMenuManager.cs" />
     <Compile Include="Assets\PageSlider\Scripts\PageDotsIndicator.cs" />
-    <Compile Include="Assets\Scripts\AndroidMusicFinder.cs" />
     <Compile Include="Assets\MobileARTemplateAssets\Scripts\ARFeatheredPlaneMeshVisualizerCompanion.cs" />
     <Compile Include="Assets\Scripts\Reload.cs" />
     <Compile Include="Assets\iOSMusic\Plugins\musicManager.cs" />
@@ -81,6 +80,7 @@
     <Compile Include="Assets\Scripts\LaunchPage.cs" />
     <Compile Include="Assets\Scripts\MuteAudio.cs" />
     <Compile Include="Assets\iOSMusic\Apple Music Example\AppleMusicController.cs" />
+    <Compile Include="Assets\Scripts\FindSong.cs" />
     <Compile Include="Assets\MobileARTemplateAssets\Scripts\GoalManager.cs" />
     <Compile Include="Assets\FocusSquareAnimationStuff\FocusSquare.cs" />
     <Compile Include="Assets\PageSlider\Scripts\PageSlider.cs" />
