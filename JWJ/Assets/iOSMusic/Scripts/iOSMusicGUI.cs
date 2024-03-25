@@ -7,8 +7,9 @@ public class iOSMusicGUI : MonoBehaviour {
 
 	public void ShowMusicLibrary()
 	{
-	    // If the plugin is currently playing a song via an Audio Source, stop playback.
-	    if(iOSMusic.instance.iOSMusicAudioSource.isPlaying)
+        musicManager.setupiOSMusic();
+        // If the plugin is currently playing a song via an Audio Source, stop playback.
+        if (iOSMusic.instance.iOSMusicAudioSource.isPlaying)
 	    {
 	        iOSMusic.instance.iOSMusicAudioSource.Stop();
 			iOSMusic.instance.HasAudioClipStartedPlaying = false;

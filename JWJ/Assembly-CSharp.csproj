@@ -71,7 +71,6 @@
     <Compile Include="Assets\MobileARTemplateAssets\UI\Scripts\CutoutMaskUI.cs" />
     <Compile Include="Assets\Scripts\UIButtonSelectionManager.cs" />
     <Compile Include="Assets\MobileARTemplateAssets\Scripts\ARTemplateMenuManager.cs" />
-    <Compile Include="Assets\Scripts\AppleMusicTestScripts\FindSong.cs" />
     <Compile Include="Assets\PageSlider\Scripts\PageDotsIndicator.cs" />
     <Compile Include="Assets\MobileARTemplateAssets\Scripts\ARFeatheredPlaneMeshVisualizerCompanion.cs" />
     <Compile Include="Assets\Scripts\Reload.cs" />
@@ -98,7 +97,6 @@
     <Compile Include="Assets\Scripts\UIRemainSelected.cs" />
     <Compile Include="Assets\Settings\Project Configuration\SceneTemplate_RotateCube.cs" />
     <Compile Include="Assets\Scripts\Audio Managers\AudioManager.cs" />
-    <Compile Include="Assets\Scripts\AppleMusicTestScripts\testMusicManager.cs" />
     <Compile Include="Assets\Scripts\OnBoard.cs" />
   </ItemGroup>
   <ItemGroup>
