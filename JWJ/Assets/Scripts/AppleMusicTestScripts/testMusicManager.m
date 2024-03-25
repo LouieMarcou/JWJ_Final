@@ -10,3 +10,11 @@
 // Converts C style string to NSString as long as it isn't empty
 #define GetStringParamOrNil( _x_ ) ( _x_ != NULL && strlen( _x_ ) ) ? [NSString stringWithUTF8String:_x_] : nil
 
+void _setupiOSMusic()
+{
+	[[HeaderFileTest TestMusicManager] setupiOSMusic];
+}
+
+void _findAppleMusic(const char* SongName)
+{
+	[[HeaderFileTest TestMusicManager] findAppleMusic:GetStringParam(SongName)];
