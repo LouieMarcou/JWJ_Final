@@ -10,7 +10,7 @@ public class OnBoard : MonoBehaviour
     void Start()
     {
         animator.Play("Base Layer.JesusBackgroundFadeAway");
-        //StartCoroutine(LoadYourAsyncScene());
+        StartCoroutine(LoadYourAsyncScene());
     }
 
     public void GoToNextScene()
@@ -22,7 +22,8 @@ public class OnBoard : MonoBehaviour
     {
         animator.Play("Base Layer.JesusBackgroundFadeIn");
         yield return new WaitForSeconds(2f);
-        SceneManager.LoadScene("JWJ");
+        sceneChangeInput = true;
+        //SceneManager.LoadScene("JWJ");
     }
 
     IEnumerator LoadYourAsyncScene()
