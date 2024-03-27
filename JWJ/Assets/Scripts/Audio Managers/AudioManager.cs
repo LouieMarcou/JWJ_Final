@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics.Tracing;
 using UnityEngine;
 
 public class AudioManager : MonoBehaviour
@@ -30,8 +31,8 @@ public class AudioManager : MonoBehaviour
     public void IOSDance()
     {
         //Needs to get song from apple store or wherever it is store.
-        CheckClip(iOSSongClip);
-        //AppleMusicController
+        //CheckClip(iOSSongClip);
+        audioSource.Stop();
         jesusAnim.ChangeAnimationState("danceThree");
     }
 
@@ -85,6 +86,15 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    public void PlayAnimation()
+    {
+        jesusAnim.animator.speed = 1;
+    }
+
+    public void PauseAnimation()
+    {
+        jesusAnim.animator.speed = 0;
+    }
 
     public void SetJesus(GameObject obj)
     {
