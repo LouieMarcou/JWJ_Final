@@ -19,6 +19,9 @@ public class MuteAudio : MonoBehaviour
     //bool iOSPlaying;
     //public AudioSource iOSMusicAudioSource;
 
+    public delegate void ClickAction();
+    public static event ClickAction OnClick;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -60,11 +63,13 @@ public class MuteAudio : MonoBehaviour
         if (AudioListener.pause == true)
         {
             AudioListener.pause = false;
+            OnClick();
             //soundControlButton.GetComponent<Image>().sprite = audioOnSprite;
         }
         else
         {
             AudioListener.pause = true;
+            OnClick();
             //soundControlButton.GetComponent<Image>().sprite = audioOffSprite;
         }
         /*

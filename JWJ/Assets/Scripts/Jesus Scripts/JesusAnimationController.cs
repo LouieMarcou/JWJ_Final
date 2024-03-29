@@ -14,6 +14,19 @@ public class JesusAnimationController : MonoBehaviour
     const string JESUS_DANCE_THREE = "danceThree";
     const string JESUS_PRAY = "Pray 0";
 
+    //public delegate void PauseJesus();
+    //public static event PauseJesus OnPause;
+
+
+    private void OnEnable()
+    {
+        MuteAudio.OnClick += ChangeJesusAnimationSpeed;
+    }
+
+    private void OnDisable()
+    {
+        MuteAudio.OnClick -= ChangeJesusAnimationSpeed;
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -57,5 +70,11 @@ public class JesusAnimationController : MonoBehaviour
     {
         yield return new WaitForSeconds(time);
         animator.Play(currentState);
+    }
+
+    private void ChangeJesusAnimationSpeed()
+    {
+        if(animator.speed == 0f) { animator.speed = 1f; }
+        else if(animator.speed == 1f) {  animator.speed = 0f; }
     }
 }
