@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 using System.IO;
 using UnityEngine.UI;
 
@@ -63,15 +64,16 @@ public class MuteAudio : MonoBehaviour
         if (AudioListener.pause == true)
         {
             AudioListener.pause = false;
-            OnClick();
             //soundControlButton.GetComponent<Image>().sprite = audioOnSprite;
+            PlayerSettings.muteOtherAudioSources = false;
         }
         else
         {
             AudioListener.pause = true;
-            OnClick();
             //soundControlButton.GetComponent<Image>().sprite = audioOffSprite;
+            PlayerSettings.muteOtherAudioSources = true;
         }
+        OnClick?.Invoke();
         /*
         if (iOSPlaying == true)
         {
