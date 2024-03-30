@@ -65,14 +65,15 @@ public class MuteAudio : MonoBehaviour
         {
             AudioListener.pause = false;
             //soundControlButton.GetComponent<Image>().sprite = audioOnSprite;
-            PlayerSettings.muteOtherAudioSources = false;
+            //PlayerSettings.muteOtherAudioSources = false;
         }
         else
         {
             AudioListener.pause = true;
             //soundControlButton.GetComponent<Image>().sprite = audioOffSprite;
-            PlayerSettings.muteOtherAudioSources = true;
+            //PlayerSettings.muteOtherAudioSources = true;
         }
+        musicManager.playPause();
         OnClick?.Invoke();
         /*
         if (iOSPlaying == true)
