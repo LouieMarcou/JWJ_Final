@@ -68,8 +68,8 @@ public class AudioManager : MonoBehaviour
     {
         if(audioSource.isPlaying && audioSource.clip == clip)
         {
-            audioSource.Pause();
-            jesusAnim.animator.speed = 0;
+            //audioSource.Pause();
+            //jesusAnim.animator.speed = 0;
         }
         else if (audioSource.isPlaying && audioSource.clip != clip)
         {
