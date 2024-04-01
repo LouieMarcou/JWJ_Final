@@ -71,6 +71,9 @@ public class JesusSpawner : MonoBehaviour
         EnsureFacingCamera() ;
     }
 
+    /// <summary>
+    /// Gets the main camera
+    /// </summary>
     void EnsureFacingCamera()
     {
         if(m_CameraToFace == null)
@@ -78,7 +81,12 @@ public class JesusSpawner : MonoBehaviour
     }
 
 
-
+    /// <summary>
+    /// Spawns the object if it can be spawned
+    /// </summary>
+    /// <param name="spawnPoint"></param>
+    /// <param name="spawnNormal"></param>
+    /// <returns></returns>
     public bool TrySpawnObject(Vector3 spawnPoint, Vector3 spawnNormal)
     {
         if(hasSpawned) return false;
@@ -109,6 +117,10 @@ public class JesusSpawner : MonoBehaviour
         }
         return true;
     }
+
+    /// <summary>
+    /// Destorys the spawned Jesus object
+    /// </summary>
     public void ClearObejcts()
     {
         Destroy(transform.GetChild(0));

@@ -72,6 +72,9 @@ public class JesusAnimationController : MonoBehaviour
         animator.Play(currentState);
     }
 
+    /// <summary>
+    /// Changes the animation speed
+    /// </summary>
     private void ChangeJesusAnimationSpeed()
     {
         if(animator.speed == 0f) { animator.speed = 1f; }

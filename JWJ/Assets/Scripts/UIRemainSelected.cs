@@ -11,24 +11,27 @@ public class UIRemainSelected : MonoBehaviour
 
     public void UpdateSelection()
     {
-        if (isSelected)
-        {
-            isSelected = false;
-            gameObject.GetComponent<Image>().sprite = normal;
-        }
-        else
-        {
-            isSelected = true;
-            gameObject.GetComponent<Image>().sprite = selected;
-        }
+        TurnOnSelection();
+        //if (isSelected)
+        //{
+        //    isSelected = false;
+        //    gameObject.GetComponent<Image>().sprite = normal;
+        //}
+        //else
+        //{
+        //    isSelected = true;
+        //    gameObject.GetComponent<Image>().sprite = selected;
+        //}
     }
 
+    //Sets the image sprite to the selected sprite
     public void TurnOnSelection()
     {
         isSelected = true;
         gameObject.GetComponent<Image>().sprite = selected;
     }
 
+    //Sets the image sprite to the normal sprite
     public void TurnOffSelection()
     {
         isSelected = false;

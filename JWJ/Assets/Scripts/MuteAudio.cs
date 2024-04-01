@@ -59,6 +59,9 @@ public class MuteAudio : MonoBehaviour
        */
     }
 
+    /// <summary>
+    /// Pauses the audio listener, the apple music audio, and the Jesus animation 
+    /// </summary>
     public void SoundControl()
     {
         if (AudioListener.pause == true)

@@ -36,7 +36,10 @@ public class AudioManager : MonoBehaviour
         jesusAnim.ChangeAnimationState("danceThree");
     }
 
-
+    /// <summary>
+    /// Changes the prayer audio clip according to the inputted string
+    /// </summary>
+    /// <param name="language"></param>
     public void Prayer(string language)
     {
         foreach(var clip in prayerAudioClipList)

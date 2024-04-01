@@ -48,7 +48,6 @@ public class LaunchPage : MonoBehaviour
 #if UNITY_ANDROID
     void Start()
     {
-        //PlayerPrefs.SetInt(IsSceneOpened, 0);//remove this later
         if (Permission.HasUserAuthorizedPermission(Permission.Camera))
         {
             GoToNextScene();
@@ -59,12 +58,18 @@ public class LaunchPage : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Gets the camera permissions from the user and goes the the next scene
+    /// </summary>
     public void GetPermissions()
     {
         Permission.RequestUserPermission(Permission.Camera);
         GoToNextScene();
     }
 
+    /// <summary>
+    /// Decides which scene to go to based on player prefs
+    /// </summary>
     void GoToNextScene()
     {
         if (PlayerPrefs.GetInt(IsSceneOpened) == 0)
@@ -80,48 +85,4 @@ public class LaunchPage : MonoBehaviour
     }
 
 #endif
-    // Start is called before the first frame update
-    //void Start()
-    //{
-    //    //GetPermissions();
-    //    if (Permission.HasUserAuthorizedPermission(Permission.Camera) || Application.HasUserAuthorization(UserAuthorization.WebCam))
-    //    {
-    //        GoToNextScene();
-    //    }
-    //    else
-    //    {
-    //        GetPermissions();
-    //    }
-    //}
-
-    //public void GetPermissions()
-    //{
-    //    if(Application.platform == RuntimePlatform.Android)
-    //        Permission.RequestUserPermission(Permission.Camera);
-    //    else if(Application.platform == RuntimePlatform.IPhonePlayer)
-    //        Application.RequestUserAuthorization(UserAuthorization.WebCam);
-    //    GoToNextScene();
-    //}
-
-    //void GoToNextScene()
-    //{
-    //    if (PlayerPrefs.GetInt(IsSceneOpened) == 0)
-    //    {
-    //        PlayerPrefs.SetInt(IsSceneOpened, 1);
-
-    //        SceneManager.LoadScene("Loading");
-    //    }
-    //    else
-    //    {
-    //        SceneManager.LoadScene("JWJ");
-    //    }
-    //}
-
-    //private void FadeBackground()
-    //{
-    //    if (animator != null)
-    //    {
-    //        animator.Play("Base Layer.JesusBackgroundFadeAway");
-    //    }
-    //}
 }
