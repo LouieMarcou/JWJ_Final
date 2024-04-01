@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics.Tracing;
 using UnityEngine;
 
 public class AudioManager : MonoBehaviour
@@ -30,11 +31,15 @@ public class AudioManager : MonoBehaviour
     public void IOSDance()
     {
         //Needs to get song from apple store or wherever it is store.
-        CheckClip(iOSSongClip);
+        //CheckClip(iOSSongClip);
+        audioSource.Stop();
         jesusAnim.ChangeAnimationState("danceThree");
     }
 
-
+    /// <summary>
+    /// Changes the prayer audio clip according to the inputted string
+    /// </summary>
+    /// <param name="language"></param>
     public void Prayer(string language)
     {
         foreach(var clip in prayerAudioClipList)
@@ -66,8 +71,8 @@ public class AudioManager : MonoBehaviour
     {
         if(audioSource.isPlaying && audioSource.clip == clip)
         {
-            audioSource.Pause();
-            jesusAnim.animator.speed = 0;
+            //audioSource.Pause();
+            //jesusAnim.animator.speed = 0;
         }
         else if (audioSource.isPlaying && audioSource.clip != clip)
         {
@@ -84,6 +89,15 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    public void PlayAnimation()
+    {
+        jesusAnim.animator.speed = 1;
+    }
+
+    public void PauseAnimation()
+    {
+        jesusAnim.animator.speed = 0;
+    }
 
     public void SetJesus(GameObject obj)
     {

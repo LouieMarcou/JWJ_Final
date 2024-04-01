@@ -423,7 +423,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="NJsonSchema">
-      <HintPath>Library\PackageCache\ai.natml.videokit@0.0.18-alpha.6\Plugins\Managed\NJsonSchema.dll</HintPath>
+      <HintPath>Library\PackageCache\ai.natml.videokit@0.0.18-alpha.7\Plugins\Managed\NJsonSchema.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VisualScripting.YamlDotNet">
@@ -463,7 +463,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="Namotion.Reflection">
-      <HintPath>Library\PackageCache\ai.natml.videokit@0.0.18-alpha.6\Plugins\Managed\Namotion.Reflection.dll</HintPath>
+      <HintPath>Library\PackageCache\ai.natml.videokit@0.0.18-alpha.7\Plugins\Managed\Namotion.Reflection.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="nunit.framework">

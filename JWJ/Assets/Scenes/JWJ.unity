@@ -3810,6 +3810,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 567200016}
   m_CullTransparentMesh: 1
+--- !u!1001 &597824075
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 180296, guid: 2720e8a201ac646eba3916b81ee99b34, type: 3}
+      propertyPath: m_Name
+      value: iOSMusic
+      objectReference: {fileID: 0}
+    - target: {fileID: 466424, guid: 2720e8a201ac646eba3916b81ee99b34, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -51.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 466424, guid: 2720e8a201ac646eba3916b81ee99b34, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.784378
+      objectReference: {fileID: 0}
+    - target: {fileID: 466424, guid: 2720e8a201ac646eba3916b81ee99b34, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 466424, guid: 2720e8a201ac646eba3916b81ee99b34, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 466424, guid: 2720e8a201ac646eba3916b81ee99b34, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 466424, guid: 2720e8a201ac646eba3916b81ee99b34, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 466424, guid: 2720e8a201ac646eba3916b81ee99b34, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 466424, guid: 2720e8a201ac646eba3916b81ee99b34, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 466424, guid: 2720e8a201ac646eba3916b81ee99b34, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 466424, guid: 2720e8a201ac646eba3916b81ee99b34, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2720e8a201ac646eba3916b81ee99b34, type: 3}
 --- !u!1 &629699445
 GameObject:
   m_ObjectHideFlags: 0
@@ -4763,7 +4820,6 @@ GameObject:
   - component: {fileID: 840188524}
   - component: {fileID: 840188526}
   - component: {fileID: 840188527}
-  - component: {fileID: 840188528}
   - component: {fileID: 840188529}
   - component: {fileID: 840188530}
   - component: {fileID: 840188531}
@@ -4934,19 +4990,6 @@ MonoBehaviour:
   soundControlButton: {fileID: 1981181484}
   audioOffSprite: {fileID: 21300000, guid: c519ac539c4f44716bf6a412fda34def, type: 3}
   audioOnSprite: {fileID: 21300000, guid: 6b709d76fd5e846828061f6390d4009c, type: 3}
---- !u!114 &840188528
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 840188522}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e23e11053b354c54cbb469aff24dd2f5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tmp: {fileID: 1954591623}
 --- !u!114 &840188529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8541,9 +8584,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: Play
+      - m_Target: {fileID: 840188525}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: IOSDance
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8568,6 +8611,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1381689693}
         m_TargetAssemblyTypeName: UIRemainSelected, Assembly-CSharp
         m_MethodName: UpdateSelection
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2083271587}
+        m_TargetAssemblyTypeName: iOSMusicGUI, Assembly-CSharp
+        m_MethodName: ShowMusicLibrary
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13404,6 +13459,50 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 828, y: 7647.6}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &2083271586
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2083271588}
+  - component: {fileID: 2083271587}
+  m_Layer: 0
+  m_Name: MusicLibrary
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2083271587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2083271586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f28187aca3c4401e81ffab5841bc5ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &2083271588
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2083271586}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2093826794
 GameObject:
   m_ObjectHideFlags: 0
@@ -13937,3 +14036,5 @@ SceneRoots:
   - {fileID: 231653832}
   - {fileID: 2129186224}
   - {fileID: 489827406}
+  - {fileID: 2083271588}
+  - {fileID: 597824075}

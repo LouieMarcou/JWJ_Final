@@ -10,7 +10,7 @@ public class OnBoard : MonoBehaviour
     void Start()
     {
         animator.Play("Base Layer.JesusBackgroundFadeAway");
-        //StartCoroutine(LoadYourAsyncScene());
+        StartCoroutine(LoadYourAsyncScene());
     }
 
     public void GoToNextScene()
@@ -18,13 +18,22 @@ public class OnBoard : MonoBehaviour
         StartCoroutine(StartFadeAway());
     }
 
+
+    /// <summary>
+    /// Runs the fade animation and sets sceneChangeInput to true so it can go to the next scene
+    /// </summary>
     IEnumerator StartFadeAway()
     {
         animator.Play("Base Layer.JesusBackgroundFadeIn");
         yield return new WaitForSeconds(2f);
-        SceneManager.LoadScene("JWJ");
+        sceneChangeInput = true;
+        //SceneManager.LoadScene("JWJ");
     }
 
+    /// <summary>
+    /// Loads the next scene in the background so that when the user is ready the next scene will load faster
+    /// </summary>
+    /// <returns></returns>
     IEnumerator LoadYourAsyncScene()
     {
         yield return null;

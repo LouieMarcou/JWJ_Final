@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 using System.IO;
 using UnityEngine.UI;
 
@@ -18,6 +19,9 @@ public class MuteAudio : MonoBehaviour
     //public GameObject IOSGameObject;
     //bool iOSPlaying;
     //public AudioSource iOSMusicAudioSource;
+
+    public delegate void ClickAction();
+    public static event ClickAction OnClick;
 
     // Start is called before the first frame update
     void Start()
@@ -55,18 +59,25 @@ public class MuteAudio : MonoBehaviour
        */
     }
 
+    /// <summary>
+    /// Pauses the audio listener, the apple music audio, and the Jesus animation 
+    /// </summary>
     public void SoundControl()
     {
         if (AudioListener.pause == true)
         {
             AudioListener.pause = false;
             //soundControlButton.GetComponent<Image>().sprite = audioOnSprite;
+            //PlayerSettings.muteOtherAudioSources = false;
         }
         else
         {
             AudioListener.pause = true;
             //soundControlButton.GetComponent<Image>().sprite = audioOffSprite;
+            //PlayerSettings.muteOtherAudioSources = true;
         }
+        musicManager.playPause();
+        OnClick?.Invoke();
         /*
         if (iOSPlaying == true)
         {
