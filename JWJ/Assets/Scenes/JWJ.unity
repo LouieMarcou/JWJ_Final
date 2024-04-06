@@ -13981,7 +13981,7 @@ MonoBehaviour:
     y: 0
     width: 0
     height: 0
-  audioMode: 2
+  audioMode: 1
   audioManager: {fileID: 840188530}
   configureAudioManager: 1
   audioListener: {fileID: 1391716211}
